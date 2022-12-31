@@ -1,0 +1,52 @@
+package com.neotech.lesson02;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Homework2 {
+/*Open Page on Firefox Browser
+ * open firefox browser
+ * Navigate to "https://www.redfin.com/"
+ * Verify that you have navigated to (https://www.redfin.com/)
+ * End the ssesion , close the broweser
+ */
+	
+	public static void main(String[] args) {
+		
+		System.getProperty("webdriver.geckodriver.driver", "drivers/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("https://www.redfin.com/");
+		
+		String excpectedTitle = ("Real Estate, Homes for Sale, MLS Listings, Agents | Redfin");
+				
+		String actualTitle = driver.getTitle();
+		
+		System.out.println("actual title -> " + actualTitle);
+		
+		if(excpectedTitle.equalsIgnoreCase(actualTitle)) {
+			System.out.println("Test passed!!!");
+			
+		}else {
+			System.out.println("Test failed");
+		}
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		driver.quit();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+
+browser = firefox
+url = //hrm.neotechacademy.com/
+#http://sis.neotechacademy.com:9000/Test/
+#url=https://demoqa.com/select-menu
+#http://uitestpractice.com/Students/Select
+username = Admin
+paswword = Neotech@123

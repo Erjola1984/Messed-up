@@ -1,0 +1,26 @@
+package com.neotech.lesson02;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Homework1 {
+	
+	//Amazone page title verification:
+	//Open Chrome browser
+	//go to : https://www.amazone.com/"
+	//verify Title "Amazone.com Online Shopping for Electronics, Apparel
+	//Computers, Books, DVDs & more" is displayed
+	//End the session, close the browser
+	
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		ChromeDriver driver = new ChromeDriver();//up-casting
+		
+		driver.get("https://www.amazone.com/");
+		
+		
+		
+	}
+
+}

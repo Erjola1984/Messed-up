@@ -1,0 +1,22 @@
+package com.neotech.lesson02;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserCommands {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", "drivers/chromerdriver");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		//will not store the history
+		//wait for the page elements to be loaded
+		
+		Thread.sleep(2000);
+		
+		driver.quit();
+	}
+}

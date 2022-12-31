@@ -1,0 +1,40 @@
+package com.neotech.lesson09;
+
+public class TaskForLoop {
+	public static void main(String[] args) {
+		
+		//Print numbers from 1 to 100 in one line with space;
+		//print numbers from 100 to 1;
+		//print even numbers from 20 to 1 (2 ways);
+		//print odd numbers between20 and 50 (2 ways);
+		
+		// Print nr from 1 to 100 in one line space
+		
+		
+		for (int a = 1; a <= 100; a++);
+		{
+			System.out.print(a + " ");
+		}
+		
+		System.out.println();
+		
+		
+		//print nr from 100 to 1
+		
+	for (int b = 100; b>= 1; b-- );
+	{
+		System.out.print(b + " ");
+	}
+	
+	//print even numbers from 20 to 1
+	
+	for (int c = 20; c>=1; c--);
+	{
+		System.out.print(c = " ");
+	}
+	
+		
+	}
+	
+
+}

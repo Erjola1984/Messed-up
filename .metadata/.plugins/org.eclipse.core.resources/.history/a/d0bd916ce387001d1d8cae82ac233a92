@@ -1,0 +1,22 @@
+package com.neotech.revew02;
+
+import com.neotech.util.BaseClass;
+
+public class Test2 extends BaseClass{
+	
+	 public static void main(String[] args) throws InterruptedException {
+		 
+		//We are preparing for our test
+		setUp();
+		
+		
+		Thread.sleep(2000);
+		
+		
+		//clear up everything
+		tearDown();
+	}
+	 
+	 
+
+}

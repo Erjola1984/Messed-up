@@ -1,0 +1,66 @@
+package com.neotech.lesson03;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HomeWork1 {
+	
+	public final static String url = "https://demo.guru99.com/test/newtours/";
+	
+	public static void main(String[] args) throws InterruptedException {
+		/*
+		 * Open chrome browser Go to "https://demo.guru99.com/test/newtours/" 
+		 * Click on Register Link 
+		 * Fill out ALL required info 
+		 * Click Submit 
+		 * User successfully registered (Create the script using different locators)
+		 */
+		
+		//deciding which browser we are using and directing it to the correct driver
+	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");	
+		
+			WebDriver driver = new ChromeDriver();
+			
+			driver.get(url);
+			
+		//click on the register link
+			driver.findElement(By.partialLinkText(url)).click();
+			
+			Thread.sleep(2000);
+			
+			//doing this in 2 steps
+			WebElement register = driver.findElement(By.partialLinkText("Regis"));
+
+			register.click();
+			
+			
+			driver.findElement(By.name("firstName")).sendKeys("0la");
+			driver.findElement(By.name("lastName")).sendKeys("Komici");
+			driver.findElement(By.name("phone")).sendKeys("347207");
+			driver.findElement(By.name("username")).sendKeys("o.komici@gmail.com");
+			
+			//address info
+			driver.findElement(By.name("address1")).sendKeys("2375 fox chase");
+			driver.findElement(By.name("city")).sendKeys("Palm harbor");
+			driver.findElement(By.name("state")).sendKeys("Florida");
+			driver.findElement(By.name("postalcode")).sendKeys("34683");
+			
+			//user details
+			driver.findElement(By.id("email")).sendKeys("Erjola123");
+			driver.findElement(By.name("password")).sendKeys("Erjola123");
+			driver.findElement(By.name("confirmPassword")).sendKeys("Erjola123");
+			
+			Thread.sleep(2000);
+			
+			
+			
+			
+			
+			
+			
+			
+	}
+
+}

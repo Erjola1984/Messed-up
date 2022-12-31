@@ -1,0 +1,17 @@
+package com.neotech.lesson02;
+
+public interface I_WebDriver {
+
+	public void get(String url);//give me a string and i will navigate
+	
+	public String getTitle();//i will return the title of the page in which you are now
+	
+	public String getCurrentUrl();//will return the url of the page in which we are currently
+	
+	public void close(); //it will close the page in which we are
+	
+	public void quit();// will close /quit all the pages
+
+	
+	
+}

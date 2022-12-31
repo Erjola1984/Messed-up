@@ -1,0 +1,26 @@
+package com.neotech.lesson09;
+
+import java.util.Scanner;
+
+public class DoWhileTask {
+
+	public static void main(String[] args) {
+		
+	//ask a user: Guess the number
+	//Lucky number is 5
+	//as long as the entered number is 5, we need to keep ask for trying
+	//once number is correct--> "You're the winner"
+		
+		int luckyNumber = 5;
+		Scanner scan = new Scanner(System.in);
+		
+		int number;
+		
+		System.out.println("Guess my number: ");
+		number = scan.nextInt();
+	
+		System.out.println("Your number " + number);
+		
+	}
+
+}

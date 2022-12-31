@@ -1,0 +1,30 @@
+package com.neotech.lesson03;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HomeWork1 {
+	
+	public final static String url = "https://demo.guru99.com/test/newtours/";
+	
+	public static void main(String[] args) {
+		/*
+		 * Open chrome browser Go to "https://demo.guru99.com/test/newtours/" 
+		 * Click on Register Link 
+		 * Fill out ALL required info 
+		 * Click Submit 
+		 * User successfully registered (Create the script using different locators)
+		 */
+		
+		//deciding which browser we are using and directing it to the correct driver
+	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");	
+		
+			WebDriver driver = new ChromeDriver();
+			
+			driver.get(url);
+			
+			
+			
+	}
+
+}

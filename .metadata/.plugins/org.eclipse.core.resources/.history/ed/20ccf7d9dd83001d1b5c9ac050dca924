@@ -1,0 +1,40 @@
+package com.neotech.lesson02;
+
+public class C_InternetDriver implements I_WebDriver {
+
+	public void C_InternetDriver() {
+		System.out.println("Opening the Internet Browser");
+	}
+	
+	@Override
+	public void get(String url) {
+		System.out.println("Opening navigating to " + url);
+
+		
+	}
+
+	public String getTitle() {
+		System.out.println("Internet gets the title of the page!!");
+		return "Page title";
+		
+	}
+
+	@Override
+	public String getCurrentUrl() {
+		System.out.println("firefox gets the current url!!!");
+		return "Url page";
+	}
+
+	@Override
+	public void close() {
+		System.out.println("Internet is closing the current tub ");
+		
+	}
+
+	@Override
+	public void quit() {
+		System.out.println("Internet is closing all the current tubs.");
+		
+	}
+
+}

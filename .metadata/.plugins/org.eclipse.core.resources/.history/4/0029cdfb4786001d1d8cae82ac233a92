@@ -1,0 +1,31 @@
+package com.neotech.lesson06;
+
+import com.neotech.utils.BaseClass;
+
+public class Homework1 extends BaseClass {
+
+	public static void main(String[] args) {
+		/*
+		 * HRM app login=open browser
+		 * go to : // hrm.neotechacademy.com/
+		 * enter valid username and password
+		 * click on login button
+		 * than verify "span with id account-name" has the text
+		 * "Jacqueline White"
+		 * quit the browser
+		 * 
+		 */
+		
+		setUp();
+	//1.declaring driver location
+	//2.Initialize driver
+	//3.Go to the url.
+		
+		
+		
+
+	tearDown();
+		
+	}
+
+}
